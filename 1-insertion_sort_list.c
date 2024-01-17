@@ -2,20 +2,17 @@
 /**
  * insertion_sort_list - Creates a doubly linked list from an array of integers
  *
- * @array: Array to convert to a doubly linked list
- * @size: Size of the array
+ * @list: list of array
  *
  * Return: Pointer to the first element of the created list. NULL on failure
  */
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *current, *tmp;
-	
+
 	if (list == NULL || *list == NULL)
 		return;
-	
 	current = (*list)->next;
-	
 	while (current)
 	{
 		tmp = current->next;
@@ -31,7 +28,7 @@ void insertion_sort_list(listint_t **list)
 			current->next->prev = current;
 			if (current->prev == NULL)
 			{
-				(*list) = current;	
+				(*list) = current;
 			}
 			else
 			{
