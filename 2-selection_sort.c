@@ -10,12 +10,12 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	unsigned int first, second;
+	size_t first, second;
 	int temp;
 
 	for (first = 0; first < size - 1; first++)
 	{
-		unsigned int min = first;
+		size_t min = first;
 
 		for (second = first + 1; second < size; second++)
 		{
