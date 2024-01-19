@@ -1,4 +1,4 @@
-# C - Stacks, Queues - LIFO, FIFO
+# C - Sorting algorithms & Big O
 **About:** In this project, we write different sorting functions.
 
 ## Objectives:
